@@ -61,19 +61,19 @@ def menu():
         print("2. Only Get Audio File from a video in .mp3 format ")
         print("3. Close")
 
-        choice = int(input("Please type your choice: \n"))
+        choice = str(input("Please type your choice: \n"))
     
-        if choice == 1:
+        if choice == "1":
             downloadVideo()
             continue
-        elif choice == 2:
+        elif choice == "2":
             downloadAudio()
             continue
-        elif choice == 3:
+        elif choice == "3":
             print("Thank you for using YoutubeDownloader !")
             break
         else: 
-            print(choice + " is not a Valide input, please try again.\n")
+            print(f'{choice} is not a Valide input, please try again.\n')
             continue
             
             
